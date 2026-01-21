@@ -1,0 +1,255 @@
+.club-introduction {
+    min-height: calc(100vh - 70px);
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 8% 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.school-badge {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.club-introduction h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.intro-text {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+}
+
+.intro-cta-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.glass-snippet {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    perspective: 1000px;
+}
+
+.code-window {
+    background: rgba(15, 15, 18, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    min-width: 600px;
+    height: 400px;
+    box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    transform: rotateY(-5deg) rotateX(2deg);
+    transition: transform 0.5s ease;
+}
+
+.code-window:hover {
+    transform: rotateY(0) rotateX(0);
+}
+
+.window-header {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.red {
+    background: #FF5F57;
+}
+
+.yellow {
+    background: #FEBC2E;
+}
+
+.green {
+    background: #28C840;
+}
+
+.code-content {
+    padding: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #A9B7C6;
+}
+
+.keyword {
+    color: #CC7832;
+}
+
+.string {
+    color: #6A8759;
+}
+
+.number {
+    color: #6897BB;
+}
+
+.variable {
+    color: #9876AA;
+}
+
+.function {
+    color: #FFC66D;
+}
+
+/* Home Features */
+.section-features {
+    padding: 100px 5%;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card {
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-depth) 100%);
+    border: 1px solid var(--glass-border);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--accent-gold);
+    border: 1px solid var(--glass-border);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+    .club-introduction {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 140px;
+        gap: 3rem;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .intro-content {
+        max-width: 100%;
+    }
+
+    .glass-snippet {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .code-window {
+        max-width: 500px;
+        transform: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .club-introduction {
+        padding-top: 120px;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+    }
+
+    .intro-cta-group {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .club-introduction h1 {
+        font-size: 2.5rem;
+    }
+
+    .code-window {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .code-content {
+        text-align: left;
+        font-size: 0.8rem;
+        padding: 1.5rem;
+        overflow-x: auto;
+    }
+}

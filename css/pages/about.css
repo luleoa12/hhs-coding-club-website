@@ -1,0 +1,81 @@
+
+.about-hero-text {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-feature-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--glass-border);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature-icon-box {
+    width: 40px;
+    height: 40px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-purple);
+}
+
+.feature-icon-box.gold {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: rgba(255, 215, 0, 0.2);
+    color: var(--accent-gold);
+}
+
+.about-feature-card h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.about-feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+.about-goal {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(0, 0, 0, 0));
+    border-left: 3px solid var(--accent-gold);
+    padding: 2rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    max-width: 800px;
+}
+
+.about-goal p {
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: italic;
+    margin: 0;
+}

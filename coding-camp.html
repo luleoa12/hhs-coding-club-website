@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Coding Camp - Hanford Coding Club</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="images/hanford_logo.ico">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            Hanford Coding Club
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="coding-camp.html" style="color: var(--accent-gold);">Camp</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html" class="mobile-contact-link">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <div class="page-container" style="padding-top: 100px; padding-bottom: 20px;">
+        <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <span class="eyebrow-pill">Past Falcon Coding Camps</span>
+                <h1 class="camp-hero-title">
+                    <span class="text-purple">2025–2026</span>
+                </h1>
+                <h1 class="camp-hero-title">
+                    <span class="text-gold">Falcon</span> Coding Camp
+                </h1>
+                <p class="camp-hero-desc">
+                    An immersive week-long game development experience for middle school students, focusing on
+                    creativity, logic, and computer science fundamentals.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 350px;">
+                <div class="camp-hero-image">
+                    <img src="images/fcc/fcc2025.png" alt="Falcon Coding Camp Classroom">
+                </div>
+            </div>
+        </div>
+
+        <div class="meta-row">
+            <div class="meta-item">
+                <span class="meta-label">Dates</span>
+                <span class="meta-value">June 23–27, 2025</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Time</span>
+                <span class="meta-value">3:00 PM – 5:00 PM</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Hanford High School - Room 2507</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Format</span>
+                <span class="meta-value">In-Person</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Grades</span>
+                <span class="meta-value">6th – 8th</span>
+            </div>
+        </div>
+
+
+        <div style="display: flex; gap: 2rem; margin: 1rem 0; flex-wrap: wrap; margin-top: -30px;">
+            <div style="flex: 1;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; margin-top: -10px; color: var(--accent-gold-dim);">
+                    Mission & Platform</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                    Students learned core programming concepts by building their own platformer games. using
+                    <strong>Microsoft MakeCode Arcade</strong>. This block-based environment bridged the gap between
+                    visual design and logic implementation, covering sprites, physics engines, and win/loss states.
+                </p>
+                <div class="notice-box">
+                    <strong>Note:</strong> We chose MakeCode for its intuitive pixel editor and instant simulator,
+                    allowing students to see their code come to life immediately.
+                </div>
+            </div>
+            <div class="makecode-image">
+                <img src="images/fcc/makecode.png" alt="MakeCode Arcade Interface">
+            </div>
+        </div>
+
+        <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem; color: var(--accent-gold-dim)">Curriculum
+            Progression
+        </h2>
+
+        <div class="curriculum-split-container">
+            <div class="curriculum-visual">
+                <div class="curriculum-visual-card">
+                    <img src="images/fcc/fcc2025_curriculum.png" alt="Curriculum Progression Level Map">
+                </div>
+            </div>
+
+            <div class="curriculum-timeline-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title">Day 1: Introduction & Player Mechanics</h3>
+                        <p style="color: var(--text-tertiary);">Setup of the MakeCode environment. Creating the player
+                            sprite,
+                            mapping controls to movement (X/Y velocity), and understanding the coordinate system.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title">Day 2: World Building & Gravity</h3>
+                        <p style="color: var(--text-tertiary);">Implementing gravity simulation (`ay`), designing
+                            tilemaps
+                            (walls, ground), and fixing camera tracking to follow the player.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title">Day 3: Game Logic & Enemies</h3>
+                        <p style="color: var(--text-tertiary);">Spawning enemies with simplified AI (patrol behavior).
+                            Adding
+                            'overlap' events to handle collision detection (taking damage or defeating enemies).</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title">Day 4: Advanced Features</h3>
+                        <p style="color: var(--text-tertiary);">Adding special abilities like a 'Dash' or 'Double Jump'.
+                            Implementing variables to track score and player lives.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" style="border-color: var(--accent-gold);"></div>
+                        <h3 class="timeline-title" style="color: var(--accent-gold);">Day 5: Final Showcase</h3>
+                        <p style="color: var(--text-tertiary);">Students polished their games with multiple levels and
+                            presented
+                            their final projects to the class.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="instructors">
+            <div class="instructors-header">
+                <h2 style="color: var(--accent-gold-dim); padding-bottom: 20px;">Student Instructors</h2>
+            </div>
+
+            <div class="instructors-grid">
+                <div class="instructor">
+                    <img src="images/instructors/leo_lu.png" alt="Leo Lu" class="avatar">
+                    <div class="instructor-info">
+                        <h4>Leo Lu</h4>
+                        <a target="_blank" href="mailto:leo.lu2@students.rsd.edu">leo.lu2@students.rsd.edu</a>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <img src="images/instructors/alvin_liu.png" alt="Alvin Liu" class="avatar">
+                    <div class="instructor-info">
+                        <h4>Alvin Liu</h4>
+                        <a target="_blank" href="mailto:alvin.liu@students.rsd.edu">alvin.liu@students.rsd.edu</a>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <img src="images/instructors/emma_yuan.png" alt="Emma Yuan" class="avatar">
+                    <div class="instructor-info">
+                        <h4>Emma Yuan</h4>
+                        <a target="_blank" href="mailto:emma.yuan@students.rsd.edu">emma.yuan@students.rsd.edu</a>
+                    </div>
+                </div>
+
+                <div class="instructor">
+                    <img src="images/instructors/sophia_chen.png" alt="Sophia Chen" class="avatar">
+                    <div class="instructor-info">
+                        <h4>Sophia Chen</h4>
+                        <a target="_blank" href="mailto:sophia.chen@students.rsd.edu">sophia.chen@students.rsd.edu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="site-footer">
+            <div class="footer-credits">
+                &copy; 2026 Hanford Coding Club Website. Built by <strong>Leo Lu</strong>.
+            </div>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://github.com/luleoa12/hhs-coding-club-website" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/hanford_cpc" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.058-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.948-.2-4.358-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

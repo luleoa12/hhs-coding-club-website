@@ -1,0 +1,41 @@
+.nav-cta,
+.submit-project {
+    background: linear-gradient(135deg, var(--accent-purple), #6D28D9);
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-md);
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent-purple), #6D28D9);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+}
+
+.submit-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover svg {
+    transform: translateX(4px);
+}

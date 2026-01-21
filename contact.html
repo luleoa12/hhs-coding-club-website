@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hanford Coding Club</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="images/hanford_logo.ico">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            Hanford Coding Club
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="coding-camp.html">Camp</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html" class="mobile-contact-link" style="color: var(--accent-gold);">Contact Us</a>
+            </li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <div class="page-container" style="padding-bottom: 20px;">
+        <div class="contact-header">
+            <h1 class="page-title" style="margin-bottom: 0;">Get in Touch</h1>
+            <p class="section-desc">
+                Whether you're a student looking to join, a parent with questions, or just curious about our projects,
+                we'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-header">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path
+                                    d="M22 16.92V20a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.12 2h3.1a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Contact Info</h3>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Email</span>
+                        <a href="mailto:eric.ogden@rsd.edu" class="value-link">eric.ogden@rsd.edu</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Advisor</span>
+                        <span class="value">Mr. Ogden</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-header">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Location</h3>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">School</span>
+                        <span class="value">Hanford High School</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Room</span>
+                        <span class="value">2507</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="glass-form" action="https://formspree.io/f/mlggnqyg" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Your name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Your email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" class="form-input" placeholder="How can we help?"
+                            name="message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="site-footer">
+            <div class="footer-credits">
+                &copy; 2026 Hanford Coding Club Website. Built by <strong>Leo Lu</strong>.
+            </div>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://github.com/luleoa12/hhs-coding-club-website" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/hanford_cpc" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.058-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.948-.2-4.358-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+            </div>
+            <h3 class="modal-title">Message Sent!</h3>
+            <p class="modal-message">Thanks for reaching out! We've received your message and will get back to you
+                shortly.</p>
+            <button class="modal-close-btn" onclick="closeModal()">Great!</button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector('.glass-form');
+        const modal = document.getElementById('successModal');
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const button = form.querySelector('button');
+            const originalText = button.innerHTML;
+
+            button.innerHTML = '<span>Sending...</span>';
+            button.disabled = true;
+            button.style.opacity = '0.7';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    modal.classList.add('active');
+                    form.reset();
+                } else {
+                    alert('Oops! There was a problem submitting your form');
+                }
+            } catch (error) {
+                alert('Oops! There was a problem submitting your form');
+            } finally {
+                button.innerHTML = originalText;
+                button.disabled = false;
+                button.style.opacity = '1';
+            }
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
