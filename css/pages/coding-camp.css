@@ -254,3 +254,66 @@
         margin: 0 auto;
     }
 }
+
+/* Special Thanks Card */
+.special-thanks-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #0d0e12;
+    /* Darker card background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem auto 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.special-thanks-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), transparent);
+}
+
+.special-thanks-icon-wrapper svg {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    stroke: #eee;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.special-thanks-content h3 {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.special-thanks-content p {
+    color: #cccccc;
+    /* Lighter than text-secondary for better contrast on dark */
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .special-thanks-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .special-thanks-content p {
+        font-size: 0.95rem;
+    }
+}
