@@ -24,7 +24,7 @@
 
 .project-image-container {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9 !important;
     background: #000;
     border-radius: 4px;
     overflow: hidden;
