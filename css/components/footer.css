@@ -50,6 +50,12 @@
         margin-top: 4rem;
     }
 
+    .footer-credits {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     .footer-links {
         justify-content: center;
         gap: 1.5rem;

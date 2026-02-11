@@ -26,13 +26,46 @@
 
 .meta-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 2rem;
     padding: 1.5rem 0;
     border-top: 1px solid var(--accent-purple);
     border-bottom: 1px solid var(--accent-purple);
     margin: 4rem 0;
     background: transparent;
+}
+
+@media (max-width: 768px) {
+    .meta-row {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem 0;
+        margin: 2rem 0;
+    }
+    
+    .meta-item {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+    }
+    
+    .meta-item:last-child {
+        border-bottom: none;
+    }
+    
+    .meta-label {
+        min-width: 80px;
+        margin: 0 1rem 0 0;
+        color: var(--accent-gold);
+        font-size: 0.7rem;
+    }
+    
+    .meta-value {
+        text-align: left;
+        font-size: 0.9rem;
+    }
 }
 
 .meta-item {
@@ -141,7 +174,6 @@
     max-width: none;
 }
 
-/* Instructors */
 .instructor-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -255,13 +287,11 @@
     }
 }
 
-/* Special Thanks Card */
 .special-thanks-card {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     background: #0d0e12;
-    /* Darker card background */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 2rem;
@@ -300,7 +330,6 @@
 
 .special-thanks-content p {
     color: #cccccc;
-    /* Lighter than text-secondary for better contrast on dark */
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
